@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    padding: 0;
+    margin: 0;
+}
+
+.conatinerimg{
+    width: 100%;
+    overflow: hidden;
+  
+}
+
+
+header img {
+    /* width: auto; */
+    height: 100vh;
+    object-fit: cover;
+    filter: brightness(.6);
+    overflow: hidden;
+  }
+  
+  
+  .type {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+  }
+
+
+  .typing {
+    color: #fff;
+    overflow: hidden;
+    border-right: 0.15em solid orangered;
+    white-space: nowrap;
+    letter-spacing: 0.15em;
+    animation: typing 3.5s steps(50, end) infinite,
+      cursor-blink 0.75s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes cursor-blink {
+    from,
+    to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: orangered;
+    }
+  }
+
+  .bigFont{
+      font-size: 80px;
+  }
+  
+  .backColorofCall{
+      background-color: rgb(243, 243, 243);
+      width: 100%;
+      height: 100%;
+
+  }
+
+  .color-white{
+      color: white;
+  }
+  .blackBackground{
+      background-color: black;
+      color: white;
+      /* overflow: hidden; */
+  }
